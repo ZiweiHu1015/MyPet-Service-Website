@@ -1,6 +1,6 @@
 Team Name: vav
 
-Application name:
+Application name:MyPet
 
 Team Overview:
 Team member name with their github usernames.
