@@ -1,16 +1,18 @@
-Team Name: vav
+# Team Name: vav
 
-Application name:MyPet
+# Application name:MyPet
 
-Team Overview:
+# Team Overview:
 
 Team member name with their github usernames.
+
 Peilin Guo: perryguo98
+
 Ziwei Hu: ZiweiHu1015
+
 Yi Sha: Candyexplode
 
-
-Innovative Idea:
+## Innovative Idea:
 
 Our website relates to an existing website “PetCoach”. https://www.petcoach.co/educational-center/
 
@@ -20,7 +22,7 @@ Our website will use a form of a forum to help users get tips on taking care of 
 
 Data type: User information, Forum information and pet  service information. 
 
-Important Components: 
+## Important Components: 
 
 One component of MyPet website is creating a platform for users to post their questions and receive answers from others. MyPet website includes three main functions: user login and profile, forum page and pet service page. 
 
