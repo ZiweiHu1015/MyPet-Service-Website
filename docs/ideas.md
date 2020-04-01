@@ -34,5 +34,5 @@ Users can provide or receive pet services to other users by using our pet servic
 * Each users can post listings requesting service
 * Each users can "apply" to provide service
 * the service provider will gets credits
-* the requester will give her credits to service provider 
+* the requester will give 10-30 credits to service provider 
 
