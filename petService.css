@@ -1,0 +1,73 @@
+
+*{
+    margin:0;
+    padding:0;
+    
+
+}
+
+
+.Piccontainer{
+
+margin-bottom:0;
+
+
+}
+
+ .dog{
+background-image: url("images/bgDog.png");
+margin:0;
+} 
+
+.Piccontainer{
+    position: relative;
+    text-align:center;
+    color:black;
+}
+.form-container{
+text-align:center;
+align:center;
+background-color: lightyellow;
+}
+
+.avaiable{
+    height:500px;
+    text-align:center;
+    background:lightblue;
+    margin-bottom :0px;
+    border-bottom:3px solid lightblue;
+    z-index:1;
+}
+
+.title-box{
+background: goldenrod;
+width:300px;
+padding:4px 10px;
+height:50px;
+margin-bottom:30px;
+display:flex;
+}
+.title-box h1{
+    font-size:20px;
+}
+.person1 {
+    border:1px solid #ddd;
+    border-radius:2px;
+    padding:1px;
+    width:180px;
+    height:120px;
+}
+.person2{
+    border:1px solid #ddd;
+    border-radius:2px;
+    padding:1px;
+    width:180px;
+    height:120px;
+}
+.person3 {
+    border:1px solid #ddd;
+    border-radius:2px;
+    padding:1px;
+    width:180px;
+    height:120px;
+}

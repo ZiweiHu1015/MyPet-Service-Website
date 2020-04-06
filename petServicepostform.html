@@ -1,0 +1,164 @@
+
+
+<!DOcTYPE html>
+<html lang = "en" dir = "ltr">
+    <head>
+        <meta charset = "utf-8">
+        <title>Welcome to the pet service page </title>
+        <link rel = "stylesheet" href = "petService.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <link rel = "stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <linl rel = "stylesheet" href = "css/custom-styel.css"/>
+        
+
+    </head>
+
+    <body>
+
+
+
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-info">
+            <a class="navbar-brand" href="#">MyPet</a>
+
+            <form class = "form-inline">
+           <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-warning my-2 my-sm-0"  type="submit">Search</button>
+            </form>
+
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse"  data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#">PetService<span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#">Educational Center</a>
+                <a class="nav-item nav-link" href="#">Contact Us</a>
+                
+              </div>
+            </div>
+          </nav>
+
+          <div class = "Piccontainer">
+          <div class = "jumbotron dog"  style = "height:480px; padding-top:200px;" >
+            <div class = "centered">
+              <p><font face = "Didot" size = 6 color = "black">Need someone to take care your pet?</font></p>
+              <p><font face = "Didot" size = 5 color = "black">We are here to help!</font></p>
+            </div> 
+          </div>
+          </div>
+          
+          <div class = "avaiable" >
+            <section class = "current-avaiable">
+              <div class = "title-box">
+                <h1>check who is avaiable in your area!  </p>  
+                </div>
+                <ul class="list-unstyled">
+                  <li class="media">
+                    <img class ="person1" src="images/person1.png" alt="person1">
+                    <div class="media-body">
+                      <h5 class="mt-0 mb-1">Dog walker at Boston</h5>
+                      Hi, I'm Mike. I can help walk your dog on Monday afternoons. I can't take any dogs less than 15 lbs since I have a big golden retriver at home.Contact me if interested!
+                    </div>
+                  </li>
+                  <li class="media my-4">
+                    <img class="person2" src="images/person2.png" alt="Generic placeholder image">
+                    <div class="media-body">
+                      <h5 class="mt-0 mb-1">Frisbee training for big dogs, Amherst</h5>
+                     This is David, I can play frisbee with any big dog on Wednesday afternoons. 
+                     If you have something busy on and can't watch your dog, just drop off your dog at my address, we will have a great time.
+              
+                    </div>
+                  </li>
+                  <li class="media">
+                    <img class="person3" src="images/person3.png" alt="Generic placeholder image">
+                    <div class="media-body">
+                      <h5 class="mt-0 mb-1">non-aggressive animals less than 15 lbs, Newton</h5>
+                      Hello, I'm Peter. I can take any non-aggressive animals less than 15 lbs. I'm free on Friday mornings. I have a gentle Chihuahua at home. Check my info if your are interested!
+                    </div>
+                  </li>
+                </ul>
+
+
+
+            </section>
+    
+    
+         
+          </div> 
+         
+          <form action="/action_page.php" class="form-container" > 
+            <p>Pet Service Post Form</p>
+            <div class="form-row">
+              <div class="col-md-3 mb-3">
+                <label for="validationServer01">First name</label>
+                <input type="text" class="form-control is-valid" id="validationServer01" value="Emma" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+              </div>
+              
+              <div class="col-md-3 mb-3">
+                <label for="validationServer02">Last name</label>
+                <input type="text" class="form-control is-valid" id="validationServer02" value="Wang" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+              </div>
+              
+            </div>
+            <div class="form-row center-block">
+              
+              <div class="col-md-3 mb-3">
+                <label for="validationServer04">Location</label>
+                <select class="custom-select is-valid" id="validationServer04" required>
+                  <option selected disabled value="">Boston</option>
+                  <option selected disabled value="">Springfield</option>
+                  <option selected disabled value="">Amherst</option>
+                  <option selected disabled value="">Newton</option>
+                </select>
+                <div class="valid-feedback">
+                    Looks good!
+                  </div>
+              </div>
+
+              <div class="col-md-3 mb-3 ">
+                <label for="validationServer05">Zip</label>
+                <input type="text" class="form-control is-valid" id="validationServer05" required>
+                <div class="valid-feedback">
+                    Looks good!
+                  </div>
+              </div>
+            </div>
+  
+            <div class = "form-row">
+            <div class="col-md-3 mb-3">
+                <label for="validationServer05">What kind of pet service you can provide?</label>
+                <input type="text" class="form-control is-valid" id="validationServer05" required>
+                <div class="valid-feedback">
+                    Specify all details regarding your service, including environment, food, activities, current pets and schedule. 
+                  </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input is-invalid" type="checkbox" value="Newton" id="invalidCheck3" required>
+                <label class="form-check-label" for="invalidCheck3">
+                  Agree to terms and conditions
+                </label>
+                <div class="invalid - feedback">
+                  You must agree before submitting.
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-info" type="submit">Submit form</button>
+          </form>
+
+      
+    </body>
+
+
+</html>
