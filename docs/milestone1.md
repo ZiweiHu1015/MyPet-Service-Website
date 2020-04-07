@@ -1,4 +1,11 @@
- #Part 1 WireFrame 
+
+#Wrok Breakdown:
+Ziwei Hu: Navigation bar,background picture and text, posting area and posting form. 
+
+
+
+
+#Part 1 WireFrame 
 * Main page: The two images below are the wireframes of the myPet website. 
 
 ![](imgMilestone1/WireFrameMainpage.jpeg)
