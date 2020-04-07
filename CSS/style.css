@@ -27,20 +27,20 @@ margin:0;
 .form-container{
 text-align:center;
 align:center;
-background-color: lightyellow;
+background-color: #1abc9c
 }
 
 .avaiable{
     height:500px;
     text-align:center;
-    background:lightblue;
+    background:l#1abc9c;
     margin-bottom :0px;
-    border-bottom:3px solid lightblue;
+    border-bottom:3px solid #1abc9c;
     z-index:1;
 }
 
 .title-box{
-background: goldenrod;
+background: #1abc9c;
 width:300px;
 padding:4px 10px;
 height:50px;
@@ -88,3 +88,27 @@ display:flex;
     padding-left: 0%;
     padding-right: 0%;
 }
+.footer{
+    background-color:  #1abc9c;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
+  }
+  .top-footer p{
+    color: white;
+  }
+  .top-footer a{
+    color: white;
+    font-weight: 600;
+  }
+  .top-footer h3{
+    color: white;
+  }
+  .bottom-footer{
+    background-color: #1abc9c;
+  }
+  .top-hero-section{
+      background-color:#1abc9c ;
+      color: white
+  }
