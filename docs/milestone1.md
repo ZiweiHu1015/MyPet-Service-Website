@@ -46,7 +46,7 @@ The above image is a screenshot of myPet's pet service page. On the top there ar
 Below the background picture, it's users' posting area. User's post will appre in this area. Users' can see other people's profile picture, a service title and a description message of their service. 
 
 *PetService3:
- ![](imgMilestone1/etServicePage3.png)
+ ![](imgMilestone1/PetServicePage3.png)
  The above image is the posting form. Users can enter their name and location, and a brief message that descripts their service. Users can choose to includ a title in their description. 
 
 
