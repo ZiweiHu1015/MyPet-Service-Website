@@ -25,3 +25,7 @@
 * Users List page:
 
 ![](imgMilestone1/WireFrameUsersList.jpg)
+
+Part 2:HTML and CSS
+*main page:
+*Educational Center:
