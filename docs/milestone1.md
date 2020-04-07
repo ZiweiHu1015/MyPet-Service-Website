@@ -1,4 +1,4 @@
- Part 1 WireFrame 
+ #Part 1 WireFrame 
 * Main page:
 
 ![](imgMilestone1/WireFrameMainpage.jpeg)
@@ -26,6 +26,8 @@
 
 ![](imgMilestone1/WireFrameUsersList.jpg)
 
-Part 2:HTML and CSS
-*main page:
-*Educational Center:
+#Part 2:HTML and CSS
+
+ *main page:
+
+ *Educational Center:
