@@ -1,8 +1,7 @@
 
 *{
     margin:0;
-    padding:0;
-    
+    padding:0;   
 
 }
 
@@ -22,26 +21,31 @@ margin:0;
 .Piccontainer{
     position: relative;
     text-align:center;
+<<<<<<< HEAD
     color:black;
 } */
 
+=======
+    color:#453E29;
+}
+>>>>>>> a5a2437e1e4cce28252e32348dd102ff4ca94e12
 .form-container{
-text-align:center;
-align:center;
-background-color: #1abc9c
+    text-align:center;
+    align:center;
+    background-color: #77B7A5;
 }
 
 .avaiable{
     height:500px;
     text-align:center;
-    background:l#1abc9c;
+    background:l#77B7A5;
     margin-bottom :0px;
-    border-bottom:3px solid #1abc9c;
+    border-bottom:3px solid #77B7A5;
     z-index:1;
 }
 
 .title-box{
-background: #1abc9c;
+background: #77B7A5;
 width:300px;
 padding:4px 10px;
 height:50px;
@@ -74,7 +78,7 @@ display:flex;
 }
 
 .mycontainer{
-    background-color: aqua;
+    background-color: #77BAE4;
     border: 3px solid red;
 }
 
@@ -90,7 +94,7 @@ display:flex;
     padding-right: 0%;
 }
 .footer{
-    background-color:  #1abc9c;
+    background-color:  #77B7A5;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -107,9 +111,9 @@ display:flex;
     color: white;
   }
   .bottom-footer{
-    background-color: #1abc9c;
+    background-color: #77B7A5;
   }
   .top-hero-section{
-      background-color:#1abc9c ;
+      background-color:#77B7A5 ;
       color: white
   }
