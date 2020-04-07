@@ -5,7 +5,7 @@
 
 
 
-![](mainPage&petService.jpeg)
+![](imgMilestone1/mainPage&petService.jpeg)
 The picture above is the wireframe for petService page. This page includes the users's posts and a post form. 
 
 
