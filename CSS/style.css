@@ -113,7 +113,10 @@ display:flex;
   .bottom-footer{
     background-color: #77B7A5;
   }
-  .top-hero-section{
-      background-color:#77B7A5 ;
-      color: white
+  .top-article-session{
+      background-color:white ;
+      color: #77B7A5
   }
+  li.right{
+    float: right;
+}
