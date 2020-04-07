@@ -7,23 +7,24 @@
 }
 
 
-.Piccontainer{
+/* .Piccontainer{
 
 margin-bottom:0;
 
 
-}
+} */
 
- .dog{
-background-image: url("images/bgDog.png");
+.dog{
+background-image: url("../images/bgDog.png");
 margin:0;
 } 
-
+/* 
 .Piccontainer{
     position: relative;
     text-align:center;
     color:black;
-}
+} */
+
 .form-container{
 text-align:center;
 align:center;
