@@ -6,7 +6,10 @@
 * Yisha: Making log in page, User list page, and User profile page.
 
 
-
+# Part 0 Data Interactions
+* User information, user profiles, including user name, password, picture and their credit.
+* Article information, User can read some article to help them take care of their pets.
+* pet service information. Pet service content, address, and time. 
 
 # Part 1 WireFrame 
 * Main page: The two images below are the wireframes of the myPet website. 
