@@ -8,7 +8,7 @@
 
 # Part 0 Data Interactions
 * User information, user profiles, including user name, password, picture and their credit.
-* Article information, User can read some article to help them take care of their pets.
+* Article information, User can submit tips and article to help other user take care of their pets.
 * pet service information. Pet service content, address, and time. 
 
 # Part 1 WireFrame 
