@@ -93,27 +93,6 @@ display:flex;
     padding-left: 0%;
     padding-right: 0%;
 }
-/*.footer{
-    background-color:  #77B7A5;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    
-  }
-  .top-footer p{
-    color: white;
-  }
-  .top-footer a{
-    color: white;
-    font-weight: 600;
-  }
-  .top-footer h3{
-    color: white;
-  }
-  .bottom-footer{
-    background-color: #77B7A5;
-  }
-  */
   .full-footer{
     background-color: #77B7A5
     
