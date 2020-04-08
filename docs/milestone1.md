@@ -1,6 +1,8 @@
 
 #Wrok Breakdown:
-Ziwei Hu: Navigation bar,background picture and text, posting area and posting form. 
+Peilin Guo:Peilin Guo: Making a common header and footer. Making Navigation bar, sliding album. Making Homepage, educational center page, and about us page.
+Ziwei Hu: Making Navigation bar, background picture, and text, posting area, and posting form. Making a pet service page.
+Yisha: Making log in page, User list page, and User profile page.
 
 
 
@@ -39,10 +41,15 @@ The picture above is the wireframe for petService page. This page includes the u
 
 #Part 2:HTML and CSS
 
- *main page:
+ *Home page:
+ The homepage helps the user be familiar with our website and other users on the website. There is a sliding album that shows our website's user's pet photo. On the home page, the user can see footer. It has images and our website logo and text describing our website.
 
 
  *Educational Center:
+ Educational center on this site offers REALLY useful tips to users - from what shots your dog should have, to tricks when taking your cat to the vet, as well as tips of cleanning your bunny's house/cage/nest
+ 
+ *About Us page:
+The primary purpose of about us page is helping users know what to expect on our webpage and who made this webpage. Users can understand the basic ideas of our website and its goals and mission by reading about us page.
 
  *PetService1:
  ![](imgMilestone1/PetServicePage1.png)
