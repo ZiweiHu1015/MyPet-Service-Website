@@ -93,7 +93,7 @@ display:flex;
     padding-left: 0%;
     padding-right: 0%;
 }
-.footer{
+/*.footer{
     background-color:  #77B7A5;
     position: absolute;
     bottom: 0;
@@ -113,6 +113,22 @@ display:flex;
   .bottom-footer{
     background-color: #77B7A5;
   }
+  */
+  .full-footer{
+    background-color: #77B7A5
+    
+  }
+  .top-footer p{
+    color: white;
+  }
+  .top-footer a{
+    color: white;
+    font-weight: 600;
+  }
+  .top-footer h3{
+    color: white;
+  }
+  
   .top-article-session{
       background-color:white ;
       color: #77B7A5
