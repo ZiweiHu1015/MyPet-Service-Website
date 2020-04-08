@@ -56,4 +56,16 @@ Below the background picture, it's users' posting area. User's post will appre i
  ![](imgMilestone1/PetServicePage3.png)
  The above image is the posting form. Users can enter their name and location, and a brief message that descripts their service. Users can choose to includ a title in their description. 
 
+* Log In page:
+ ![](imgMilestone1/login.jpg)
 
+* Sign Up page:
+ ![](imgMilestone1/signup.jpg)
+
+* Profile page:
+ ![](imgMilestone1/profile.jpg)
+ Future, I will change this page to a pop-up page. 
+
+* User List page:
+ ![](imgMilestone1/userlist.jpg)
+ Users can post their on Memo part of profile page, and users can check and send emails to the person who can help according to their skills. Users can click "User Name" to see the profiles.
