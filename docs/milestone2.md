@@ -12,24 +12,24 @@ API flowcharts:
 
 Part 2: Front-end Implementation
 
-*Create 
-*Parameter
-*Description
+* Create 
+* Parameter
+* Description
 
-*Fname
-*(Required) The first name for the newly created user counter
+* Fname
+* (Required) The first name for the newly created user counter
 
-*Lname
-*(Required) The last name for the newly created user
-
-
-*City
-*(Required) The city name for the newly created counter city name
+* Lname
+* (Required) The last name for the newly created user
 
 
-*example:
+* City
+* (Required) The city name for the newly created counter city name
+
+
+* example:
 ![](imgMilestone1/create.png)
-*Responses
+* Responses
 The create API returns all response data as a JSON object. 
 The interface will create a post for user to our database. 
 
