@@ -1,0 +1,285 @@
+
+
+<!DOcTYPE html>
+<html lang = "en" dir = "ltr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="client.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a35c8e31ef.js" crossorigin="anonymous"></script>
+   <!-- Our Custom CSS style sheet -->
+   <link rel="stylesheet" href="css/style.css">
+   
+   
+    <title>Pet service</title>
+  </head>
+
+    <body>
+
+
+
+
+      <header>
+        <div class="p-1" id="topHeader">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 text-right">
+              <a class="p-2" href="tel:+17818279608"> <i class="fas fa-phone-square-alt"></i>+(1)7818279608 </a>
+              <a class="p-2"href="mailto:fakemial@gmail.com"> <i class="fas fa-envelope"></i>fackemail@gmail.com </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="lowHeader">
+          <div class="container-fluid">
+            <nav class="navbar navbar-dark  navbar-expand-md" style="background-color: #77B7A5"> 
+              <a class="navbar-brand"href="">
+                <img src="images/Mypetlogo.png" width="70px" alt=""> 
+              </a>
+              <button data-toggle="collapse" data-target="#navbarToggler" type="button" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
+              <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul class="navbar-nav">
+               
+                  <li class="nav-item ">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+  
+                <li class="nav-item active">
+                  <a class="nav-link" href="petServicepostform.html">Pet service</a>
+                </li>
+  
+                <li class="nav-item">
+                  <a class="nav-link" href="educationalCenter.html">Educational Center</a>
+                </li>
+  
+                <li class="nav-item">
+                  <a class="nav-link" href="aboutUs.html">About us</a>
+                </li>
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">User
+                    </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="login.html">Login</a>
+                    <a class="dropdown-item" href="login.html" id="signOutButton">Logout</a>
+                    <a class="dropdown-item" href="profile.html">My Profile</a>
+                    <a class="dropdown-item" href="pets.html">My Pets</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="users.html">User List</a>
+                  </div>
+                  </li>
+              </ul>
+            </div>
+          </nav>
+  
+        </div>
+      </div>
+    </header>
+    <div class = "jumbotron dog"  style = "height:480px; padding-top:200px;" >
+
+          <div class = "Piccontainer">
+            
+            <div class = "centered">
+              <p><font face = "Didot" size = 6 color = "black">Need someone to take care your pet?</font></p>
+              <p><font face = "Didot" size = 5 color = "black">We are here to help!</font></p>
+            </div> 
+          </div>
+          </div>
+          
+          <div class = "avaiable" >
+            <section class = "current-avaiable">
+
+              <div class = "title-box">
+                <h6>Want to know if you have already posted a service or Delet your post?</h1> 
+              </div>   
+          <div class="form-row center-block">
+            <div class="col-md-3 mb-3">   
+                <label for="searchName1"> Your first name</label>
+               <input type="text" class="form-control " id="searchName1" required>
+               <label for="searchName2"> Your last name</label>
+               <input type="text" class="form-control" id="searchName2" required>
+</div> 
+<div class="col-md-3 mb-3">
+              <label for="searchLocation">Your location</label>
+                  <input type="text" class="form-control" id="searchLocation" required>
+ </div>               
+  <div class="col-md-3 mb-3">                
+  <button onclick="petRead()" class="btn btn-info" type="submit">  Find YOUR services</button>
+  <p></p>
+  <button onclick="petDelete()" class="btn btn-info" type="submit">  Delete Your Post</button>
+  </div>
+  <div class="col-md-3 mb-3">
+  <h5 id="output3" class="mt-0 mb-1"></h5>
+</div></div>
+
+<div class="form-row center-block">
+  <div class="col-md-3 mb-3"></div>
+  <div class="col-md-3 mb-3">
+  <label for="searchLocationAll"> Find All Services</label>
+
+  <input type="text" class="form-control" id="searchLocationAll" value="Enter the city name here" required>
+  </div>
+  <p></p>
+  <div class="col-md-3 mb-3">
+  <button onclick="petSearch()" class="btn btn-info" type="submit">Find All Services</button>
+  </div>
+</div>
+
+                
+
+                <ul class="list-unstyled">
+                  <div class="col">
+                    <h5 id="output" class="mt-0 mb-1">
+                      <p id="outputAll"></p>
+                      <!--<small style="font-size: small;"></small>-->
+                    </h5>
+                    <p id="output2">
+                    <!--<small style="font-size: small;"></small>-->
+                    </p>
+                  </div>
+                  <li class="media">
+                    <!--<img class ="person1" src="images/person1.png" alt="person1">-->
+                    <div class="media-body">
+                      <h5 class="mt-0 mb-1">Mike, Boston</h5>
+                      Hi, I'm Mike. I can help walk your dog on Monday afternoons. I can't take any dogs less than 15 lbs since I have a big golden retriver at home.Contact me if interested!
+                    </div>
+                  </li>
+                  <!--<li class="media my-4">
+                    <img class="person2" src="images/person2.png" alt="Generic placeholder image">
+                    <div class="media-body">
+                      <h5 class="mt-0 mb-1">David, Amherst</h5>
+                     This is David, I can play frisbee with any big dog on Wednesday afternoons. 
+                     If you have something busy on and can't watch your dog, just drop off your dog at my address, we will have a great time.
+              
+                    </div>
+                  </div> 
+                  </li>-->
+
+                  
+                  <!--<li class="media">
+                    <img class="person3" src="images/person3.png" alt="Generic placeholder image">
+                    <div class="media-body">
+                      <h5 class="mt-0 mb-1">Peter, Newton</h5>
+                      Hello, I'm Peter. I can take any non-aggressive animals less than 15 lbs. I'm free on Friday mornings. I have a gentle Chihuahua at home. Check my info if your are interested!
+                    </div>
+                  </li>-->
+                </ul>
+
+
+
+            </section>
+    
+    
+         
+          </div> 
+         
+          <!--<form action="/action_page.php" class="form-container" > -->
+            <div class="form-row center-blcok">
+              <div class="col-md-3 mb-3"></div>
+              <h5 class="mt-0 mb-1">Create Pet Service Form</h5>
+</div>
+            <div class="form-row center-blcok">            
+              <div class="col-md-3 mb-3"></div>
+              <div class="col-md-3 mb-3">
+                <label for="validationServer01">First name</label>
+                <input type="text" class="form-control is-valid" id="validationServer01" value="Emma" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+              </div>
+              
+              <div class="col-md-3 mb-3">
+                <label for="validationServer02">Last name</label>
+                <input type="text" class="form-control is-valid" id="validationServer02" value="Wang" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+              </div>
+            </div>
+
+            </div>
+            <div class="form-row center-block">
+              <div class="col-md-3 mb-3"></div>
+              <!--<div class="col-md-3 mb-3">
+                <label for="validationServer03">Location</label>
+                <select class="custom-select is-valid" id="validationServer03" required>
+                  <option selected disabled value="">Boston</option>
+                  <option selected disabled value="">Springfield</option>
+                  <option selected disabled value="">Amherst</option>
+                  <option selected disabled value="">Newton</option>
+                </select>
+                <div class="valid-feedback">
+                    Looks good!
+                  </div>
+              </div>-->
+
+              <div class="col-md-3 mb-3 ">
+                <label for="validationServer04">Location (City)</label>
+                <input type="text" class="form-control is-valid" id="validationServer04" required>
+                <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                  
+              </div>              
+              <div class ="col-md-3 mb-3">
+                 <label for="validationServer05"> Service Post Content</label>
+                <input type="text" class="form-control is-valid" id="validationServer05" required>
+                <div class="valid-feedback">
+                    Specify all details regarding your service, including environment, food, activities, current pets and schedule. 
+                  </div></div>
+            </div>
+            <div class="form-row center-block">
+              <div class="col-md-3 mb-3"></div>
+              <div class = "col-md-3 mb-3">
+                <!--<div class="form-check">
+                <input class="form-check-input is-invalid" type="checkbox" value="Newton" id="invalidCheck3" required>
+                <label class="form-check-label" for="invalidCheck3">
+                  ① Agree to terms and conditions
+                </label></div>-->
+                <div class="invalid - feedback">
+                  By submitting, you agree with our terms.
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+            <div class="form-group">
+              <div class="form-check">
+
+                <button onclick="petCreate()" class="btn btn-info" type="submit"> ① Create Initial Post if You Haven't</button>
+
+              </div>
+            </div>                
+              </div>
+            </div>
+            <div class="form-row center-block">
+              <div class="col-md-3 mb-3"></div>
+              <div class ="col-md-3 mb-3"></div>
+
+            <button onclick = "petUpdate()" class="btn btn-info" type="submit"> ② Add or Change Services if You Have a Post Already</button>
+                            
+                </div>
+            </div>
+
+
+          </form>
+          <br/></br>
+          <br/></br>
+          <br/></br>
+          <br/></br>
+
+      
+
+  
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+ 
+  </body>
+
+
+</html>
