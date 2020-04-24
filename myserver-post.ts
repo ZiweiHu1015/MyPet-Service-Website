@@ -6,14 +6,14 @@ export class MyServer {
 
     private theDatabase;
 
-    // Server stuff: use express instead of http.createServer
+    
     private server = express();
     private port = 8080;
     private router = express.Router();
 
     constructor(db) {
 	this.theDatabase = db;
-	// from https://enable-cors.org/server_expressjs.html
+
 	this.router.use((request, response, next) => {
 	    response.header('Content-Type','application/json');
 	    response.header('Access-Control-Allow-Origin', '*');
@@ -35,7 +35,7 @@ export class MyServer {
 	    response.send(JSON.stringify({ "result" : "command-not-found" }));
 	});
 	// Start up the counter endpoint at '/counter'.
-	this.server.use('/counter', this.router);
+	this.server.use('/pet', this.router);
     }
 
     private async errorHandler(request, response, next) : Promise<void> {
@@ -76,7 +76,7 @@ export class MyServer {
     }
 
     public async createPet(name: string, response) : Promise<void> {
-	console.log("creating counter named '" + name + "'");
+	console.log("creating city named '" + name + "'");
 	await this.theDatabase.put(name, 0);
 	response.write(JSON.stringify({'result' : 'created',
 				       'name' : name,
