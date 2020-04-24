@@ -12,9 +12,22 @@ Application Structure
   User should be able to see how they received or used their credits. 
   
  Part0: Project API Planning
+ All Endpoints
  
- 1. User should be able to create an account and log in.
- 2. User should be able to retrive their account information by clicking the user profile. 
+Create API:
+The create endpoint provides a way for the clients to create a new user with four fields: first name, last name, city and value. 
+
+Endpoint URI and Parameters: localhost:localhost:8080/pet/create?<Parameter>=<Value
+ 
+Parameter: first name, last name , city, value
+ 
+ Responses:
+ Key: firstname, lastname, city, value
+ Value Type: String
+ Description: Basic profile of a user
+ 
+ 
+
  
  Part 1: Back-end Skeleton Code
  
