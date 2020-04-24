@@ -34,6 +34,29 @@ The create API returns all response data as a JSON object.
 The interface will create a post for user to our database. 
 
 
+* Update:
+The update provides a way for the clients to update their previous posts. They can update the first name, last name, city and value.
+
+There are three requirement parameters and zero optional parameters for this endpoint. 
+
+Parameter
+Description
+Example
+FName
+(Required) The first name for the newly created server content
+LName 
+(Required) The last name for the newly created server content
+City
+(Required) The city name of the service server content
+content 
+(Required) The service post message by the user to replace the default or previous post
+
+
+Example
+![](imgMilestone1/update.png)
+Responses:
+If users do not have server content before, update will help them to add their server content 
+If users have server coentent before,update will help them to change their server content
 
 
 
