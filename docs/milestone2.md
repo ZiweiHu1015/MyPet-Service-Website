@@ -1,6 +1,6 @@
 # MyPet
 # Work Breakdown:
-* Peilin Guo:Peilin Guo: Making Back-end Skeleton Code and Front-end Implementation. Writing md file. Helping implement database code.
+* Peilin Guo:Peilin Guo: Making Back-end Skeleton Code and Front-end Implementation. Writing milestone2.md file. Helping implement database code.
 * Ziwei Hu: Making Navigation bar, background picture, and text, posting area, and posting form. Making a pet service page.
 * 
 
