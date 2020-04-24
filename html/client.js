@@ -75,7 +75,7 @@ function petUpdate() {
 	const resp= await postData(newURL, data);
 	const j = await resp.json();
 	if (j['result'] !== 'error'){
-		document.getElementById("output2").innerHTML = j['value'] + "</b>";
+		document.getElementById("output2").innerHTML = j['City'] + "</b>";
 	} else {
 		document.getElementById("output2").innerHTML = "Faild to update </b>"
 	}
