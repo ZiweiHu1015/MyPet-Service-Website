@@ -1,0 +1,290 @@
+html {
+    height: 100%;
+}
+
+body {
+    padding-top: 56px;
+}
+
+.sidebarMain {
+    flex: 1;
+}
+
+footer {
+    height: 60px;
+    line-height: 35px;
+    background-color: rgb(245, 239, 237);
+}
+
+#HomeSection {
+    background: #e74c3c;
+    color: white;
+    padding: 0;
+}
+
+#JumbotronImage {
+    width: 100%;
+}
+
+.jumbotronTextOnImages {
+    position: absolute;
+    width: 100%;
+}
+
+#JumbotronHeading {
+    margin-top: 20%;
+}
+
+.teamMemberContainer {
+    padding: 5px;
+}
+
+.teamMemberImage {
+    margin-bottom: 10px;
+}
+
+.socialImages {
+    width: 50px;
+}
+
+#ContactSection {
+    background-color: #000000;
+    color: #ffffff;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+#ContactButtonContainer {
+    margin-top: 10px;
+}
+
+.carouselImage {
+    width: 100%;
+    height: 100%;
+}
+
+.cardImage {
+    width: 100%;
+}
+
+.cardContainer {
+    margin-top: 10px;
+}
+
+#PostImageBanner {
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+#PostSnapshot {
+    margin-bottom: 35px;
+}
+
+.postArticleImage {
+    width: 75%;
+    margin-left: 12.5%;
+}
+
+.postContainer {
+    margin-top: 10px;
+}
+
+.postThumbnail {
+    width: 100px;
+}
+
+.postMediaBody {
+    margin-top: 15px;
+}
+
+#PostLinksHeader {
+    margin-top: 35px;
+}
+
+.postSidebarLine {
+    border-top: 7px solid #00549e;
+}
+
+.postPopularImage {
+    width: 75px;
+}
+
+.postPopularContainer {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 10px;
+}
+
+#SidebarToggle {
+    color: white;
+}
+
+#sidebar {
+    overflow: hidden;
+    z-index: 3;
+    max-width: 250px;
+}
+
+#sidebar .list-group {
+    background-color: #333;
+    min-height: 80vh;
+}
+
+#sidebar i {
+    margin-right: 6px;
+}
+
+#sidebar .list-group-item {
+    border-radius: 0;
+    background-color: #333;
+    color: #ccc;
+    border-left: 0;
+    border-right: 0;
+    border-color: #2c2c2c;
+    white-space: nowrap;
+}
+
+#sidebar .list-group-item:not(.collapsed) {
+    background-color: #222;
+}
+
+#sidebar .list-group .list-group-item[aria-expanded="flase"]::after {
+    content: " \f0d7";
+    font-family: FontAwesome;
+    display: inline;
+    text-align: right;
+    padding-left: 5px;
+}
+
+#sidebar .list-group .list-group-item[aria-expanded="true"]
+{
+  background-color: #222;
+}
+
+#sidebar .list-group .list-group-item[aria-expanded="true"]::after
+{
+  content: " \f0da";
+  font-family: FontAwesome;
+  display: inline;
+  text-align: right;
+  padding-left: 5px;
+}
+
+#sidebar .list-group .collapse .list-group-item,
+#sidebar .list-group .collapsing .list-group-item 
+{
+  padding-left: 20px;
+}
+
+#sidebar .list-group .collapse > .collapse .list-group-item,
+#sidebar .list-group .collapse > .collapsing .list-group-item
+{
+  padding-left: 30px;
+}
+
+@media (max-width:768px)
+{
+    #sidebar
+    {
+      min-width: 35px;
+      max-width: 40px;
+      overflow-y: auto;
+      overflow-x: visible;
+      transition: all 0.25s ease;
+      transform: translateX(-45px);
+      position: fixed;
+    }
+    
+    #sidebar.show
+    {
+      transform: translateX(0);
+    }
+
+    #sidebar::-webkit-scrollbar
+    {
+    	width: 0px;
+    }
+    
+    #sidebar, #sidebar .list-group
+    {
+      min-width: 35px;
+      overflow: visible;
+    }
+
+    #sidebar .list-group .collapse.show, #sidebar .list-group .collapsing
+    {
+      position: relative;
+      z-index: 1;
+      width: 190px;
+      top: 0;
+    }
+    #sidebar .list-group > .list-group-item
+    {
+      text-align: center;
+      padding: .75rem .5rem;
+    }
+
+    #sidebar .list-group > .list-group-item[aria-expanded="true"]::after,
+    #sidebar .list-group > .list-group-item[aria-expanded="false"]::after
+    {
+      display:none;
+    }
+}
+
+#PostButtonContainer {
+    margin-top: 25px;
+}
+
+.postContainer {
+    margin-top: 10px;
+}
+
+.postThumbnail {
+    width: 100px;
+}
+
+.postMediaBody {
+    margin-top: 15px;
+}
+
+#ProfileJumbotron {
+    padding-bottom: 0;
+    padding-top: 0;
+    margin-top: 5px;
+}
+
+#ProfileBannerImage {
+    width: 100%;
+}
+
+.bg-mypet-green {
+    background-color: #77b7a5 !important;;
+}
+
+.mypet-style1 {
+    color: #77b7a5;
+    font-family: 'Arial Black' Gadget sans-serif;
+    font-weight: bold;
+}
+.mypet-style2 {
+    background-color: #77b7a5;
+    font-family: 'Arial Black' Gadget sans-serif;
+    font-size: 120%;
+}
+.mypet-style3 {
+    color: #453e29;
+    font-family: 'Arial Black' Gadget sans-serif;
+    font-size: 120%;
+}
+.mypet-style4 {
+    color: #dd1540;
+    font-family: 'Arial Black' Gadget sans-serif;
+    font-size: 500%;
+}
+.mypet-style5 {
+    color: #453e29;
+    font-family: 'Arial Black' Gadget sans-serif;
+    font-size: 100%;
+}
