@@ -1,10 +1,11 @@
 export class Database {
 
     private MongoClient = require('mongodb').MongoClient;
-    private uri = "mongodb+srv://guest:guest@cluster0-y0tyl.mongodb.net/test?retryWrites=true&w=majority";
-    private client;
+	private uri = "mongodb+srv://ZiweiHu1015:01041841Hz@finaldb-ewl75.mongodb.net/test?retryWrites=true&w=majority";
+	
+	private client;
     private collectionName : string;
-    private dbName : string = "emery";
+    private dbName : string = "finaldb";
 
     constructor(collectionName) {
 	this.collectionName = collectionName;
@@ -31,7 +32,14 @@ export class Database {
 	(async () => {
 	    await this.client.connect().catch(err => { console.log(err); });
 	})();
-    }
+	}
+	
+	// this.client.connect(err => {
+	// 	const collection = this.client.db("test").collection("devices");
+	// 	// perform actions on the collection object
+	// 	this.client.close();
+	//   });
+	
 
     public async put(key: string, value: string) : Promise<void> {
 	let db = this.client.db(this.dbName);
@@ -54,6 +62,19 @@ export class Database {
 	}
 	}
 	
+	// public async create(key: string):Promise<string>{
+	// 	let db = this.client.db(this.dbName);
+	// 	let collection = db.collection(this.collectionName);
+	// 	console.log("get: key = " +key);
+	// 	let result = await collection.insert({'name': key});
+	// 	console.log("get: returned" +JSON.stringify(result));
+	// 	if(result){
+	// 		return result.value;
+	// 	}else{
+	// 		return null; 
+	// 	}
+	// }
+
 
 	public async search(key: string) : Promise<string> {
 		let db = this.client.db(this.dbName); // this.level(this.dbFile);

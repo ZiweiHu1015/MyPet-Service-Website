@@ -1,6 +1,6 @@
 'use strict';
 
-import { Database } from './mongo-database';
+import { Database } from './database';
 import { MyServer } from './myserver-post';
 
 const theDatabase = new Database('perryguo98'); // CHANGE THIS
