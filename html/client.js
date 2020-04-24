@@ -33,7 +33,7 @@ function petCreate() {
 	const resp = await postData(newURL,data);
 	const j = await resp.json();
 	if (j['result'] !== 'error') {
-		document.getElementById("output").innerHTML = Fname + ", " + Lname ;
+		document.getElementById("output").innerHTML = Fname + ", " + City ;
 	} else {
 	    document.getElementById("output").innerHTML = "No post is found.</b>";
 	}
@@ -75,7 +75,7 @@ function petUpdate() {
 	const resp= await postData(newURL, data);
 	const j = await resp.json();
 	if (j['result'] !== 'error'){
-		document.getElementById("output2").innerHTML = j['City'] + "</b>";
+		document.getElementById("output2").innerHTML = j['value'] + "</b>";
 	} else {
 		document.getElementById("output2").innerHTML = "Faild to update </b>"
 	}
