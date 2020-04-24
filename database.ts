@@ -15,76 +15,112 @@ export class Database {
 	(async () => {
 	    await this.client.connect().catch(err => { console.log(err); });
 	})();
-	}
-	
-	// this.client.connect(err => {
-	// 	const collection = this.client.db("test").collection("devices");
-	// 	// perform actions on the collection object
-	// 	this.client.close();
-	//   });
-	
-
-    public async put(key: string, value: string) : Promise<void> {
-	let db = this.client.db(this.dbName);
-	let collection = db.collection(this.collectionName);
-	console.log("put: key = " + key + ", value = " + value);
-	let result = await collection.updateOne({'name' : key}, { $set : { 'value' : value} }, { 'upsert' : true } );
-	console.log("result = " + result);
     }
 
-    public async get(key: string) : Promise<string> {
-	let db = this.client.db(this.dbName); // this.level(this.dbFile);
-	let collection = db.collection(this.collectionName);
-	console.log("get: key = " + key);
-	let result = await collection.findOne({'name' : key });
-	console.log("get: returned " + JSON.stringify(result));
-	if (result) {
-	    return result.value;
-	} else {
-	    return null;
-	}
-	}
-	
-	// public async create(key: string):Promise<string>{
-	// 	let db = this.client.db(this.dbName);
-	// 	let collection = db.collection(this.collectionName);
-	// 	console.log("get: key = " +key);
-	// 	let result = await collection.insert({'name': key});
-	// 	console.log("get: returned" +JSON.stringify(result));
-	// 	if(result){
-	// 		return result.value;
-	// 	}else{
-	// 		return null; 
-	// 	}
-	// }
 
-
-	public async search(key: string) : Promise<string> {
-		let db = this.client.db(this.dbName); // this.level(this.dbFile);
+//    public async get(key: string) : Promise<string> {
+//		let db = this.client.db(this.dbName); // this.level(this.dbFile);
+//		let collection = db.collection(this.collectionName);
+//		console.log("get: key = " + key);
+//		let result = await collection.findOne({'Lname' : key });
+//		console.log("get: returned " + JSON.stringify(result));
+//		if (result) {
+//			return result.value;
+//		} else {
+//			return null;
+//		}
+//		}
+	public async get(FName:string, LName:string, CityName:string): Promise<string>{
+		let db = this.client.db(this.dbName);
 		let collection = db.collection(this.collectionName);
-		console.log("get: key = " + key);
-		let result = await collection.findMany({'name' : key });
-		console.log("get: returned " + JSON.stringify(result));
+		console.log("get key = "+ FName+" "+LName +" "+CityName);
+		let result = await collection.findOne({ 'Fname':FName,
+											    'Lname' :LName,
+												'City' :CityName});
+		console.log("get returned: " +JSON.stringify(result));
 		if (result) {
 			return result.value;
 		} else {
 			return null;
 		}
+	}
+
+
+    public async del(Fname: string, Lname:string, City:string) : Promise<void> {
+		let db = this.client.db(this.dbName);
+		let collection = db.collection(this.collectionName);
+		console.log("delete: key = " + Fname);
+		let result = await collection.deleteOne({'Fname' : Fname,
+												 'Lname' : Lname,
+												 'City'  : City });
+		console.log("Deleted");
+		// await this.db.del(key);
 		}
-	
-    
-    public async del(key: string) : Promise<void> {
+
+
+
+	public async search(cityName:string): Promise<any>{
+		let db = this.client.db(this.dbName);
+		let collection = db.collection(this.collectionName);
+		console.log("search key = "+ cityName);
+		let result = await collection.findMany({"City": cityName});
+		console.log(result)
+		if (result){
+			return result.value;
+		} else {
+			return null;
+		}
+	}
+
+
+
+    public async put(key: string, value: string) : Promise<void> {
 	let db = this.client.db(this.dbName);
 	let collection = db.collection(this.collectionName);
-	console.log("delete: key = " + key);
-	let result = await collection.deleteOne({'name' : key });
+	console.log("put: key = " + key + ", value = " + value);
+	let result = await collection.updateOne({'name' : key}, 
+											{ $set : { 'value' : value} }, 
+											{ 'upsert' : true } );
 	console.log("result = " + result);
-	// await this.db.del(key);
+	}
+	
+	public async update(Fname:string, Lname:string, City:string, value:string): Promise<void>{
+	let db = this.client.db(this.dbName);
+	let collection = db.collection(this.collectionName);
+	console.log("updating "+Fname+ " " + Lname +" at " + City);
+	let result = await collection.updateOne({'Fname':Fname},
+											 { $set: { 'value' : value} },
+											 { 'upsert' : true } );
+	console.log("update successful: "+ result)
+	}
+
+	
+
+
+
+
+	public async create(Fname:string, Lname:string, City:string, value:string) : Promise<void>{
+        let db = this.client.db(this.dbName);
+        let collection = db.collection(this.collectionName);
+        let doc = {
+            'Fname': Fname,
+			'Lname': Lname,
+			'City':City,
+			'value': value
+        }
+        let result = await collection.insertOne(doc);
+
+        //let result = await collection.updateOne({'word':name},{$set: {'img': img, 'languages':{}, 'definition':null}, },{'upsert' : true});
+        console.log("create: word = " + Fname + " "+Lname +" "+City +" "+ "Empty Post");
+        console.log(result);
     }
-    
-    public async isFound(key: string) : Promise<boolean>  {
-	console.log("isFound: key = " + key);
-	let v = await this.get(key);
+   
+
+
+
+public async isFound(userId: string, LName:string, cityName:string) : Promise<boolean>  {
+	console.log("isFound: key = " + userId);
+	let v = await this.get(userId, LName, cityName);
 	console.log("is found result = " + v);
 	if (v === null) {
 	    return false;
