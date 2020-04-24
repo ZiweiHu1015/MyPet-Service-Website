@@ -15,8 +15,52 @@ export class Database {
 	(async () => {
 	    await this.client.connect().catch(err => { console.log(err); });
 	})();
+	}
+	
+	// this.client.connect(err => {
+	// 	const collection = this.client.db("test").collection("devices");
+	// 	// perform actions on the collection object
+	// 	this.client.close();
+	//   });
+	
+
+<<<<<<< HEAD:mongo-database.ts
+=======
+    public async put(key: string, value: string) : Promise<void> {
+	let db = this.client.db(this.dbName);
+	let collection = db.collection(this.collectionName);
+	console.log("put: key = " + key + ", value = " + value);
+	let result = await collection.updateOne({'name' : key}, { $set : { 'value' : value} }, { 'upsert' : true } );
+	console.log("result = " + result);
     }
 
+    public async get(key: string) : Promise<string> {
+	let db = this.client.db(this.dbName); // this.level(this.dbFile);
+	let collection = db.collection(this.collectionName);
+	console.log("get: key = " + key);
+	let result = await collection.findOne({'name' : key });
+	console.log("get: returned " + JSON.stringify(result));
+	if (result) {
+	    return result.value;
+	} else {
+	    return null;
+	}
+	}
+	
+	// public async create(key: string):Promise<string>{
+	// 	let db = this.client.db(this.dbName);
+	// 	let collection = db.collection(this.collectionName);
+	// 	console.log("get: key = " +key);
+	// 	let result = await collection.insert({'name': key});
+	// 	console.log("get: returned" +JSON.stringify(result));
+	// 	if(result){
+	// 		return result.value;
+	// 	}else{
+	// 		return null; 
+	// 	}
+	// }
+
+>>>>>>> 2ca5ae348e7aa4cd358ec0f205480ca2e3887d22:database.ts
 
 //    public async get(key: string) : Promise<string> {
 //		let db = this.client.db(this.dbName); // this.level(this.dbFile);
