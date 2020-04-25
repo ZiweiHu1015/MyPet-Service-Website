@@ -39,17 +39,18 @@ exports.__esModule = true;
 var http = require('http');
 var url = require('url');
 var express = require('express');
-var MyServer = /** @class */ (function () {
+var MyServer = /** @class */ (function () { 
     function MyServer(db) {
         var _this = this;
         this.server = express();
-        this.port = 8080;
+       // process.env.PORT || 8080;
+        this.port = process.env.PORT || 8080;
         this.router = express.Router();
         this.theDatabase = db;
         this.router.use(function (request, response, next) {
             response.header('Content-Type', 'application/json');
             response.header('Access-Control-Allow-Origin', '*');
-            response.header('Access-Control-Allow-Headers', '*');
+            response.header('Access-C ontrol-Allow-Headers', '*');
             next();
         });
         // Serve static pages from a particular path.
