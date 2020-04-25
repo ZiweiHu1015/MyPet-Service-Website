@@ -88,7 +88,9 @@ export class Database {
 	let db = this.client.db(this.dbName);
 	let collection = db.collection(this.collectionName);
 	console.log("updating "+Fname+ " " + Lname +" at " + City);
-	let result = await collection.updateOne({'Fname':Fname},
+	let result = await collection.updateOne({'Fname':Fname,
+											 'Lname':Lname,
+											 'City': City},
 											 { $set: { 'value' : value} },
 											 { 'upsert' : true } );
 	console.log("update successful: "+ result)
