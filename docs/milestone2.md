@@ -163,7 +163,7 @@ And for html part, you need to run "serve" at "html" folder.
 
 #### Heroku link for user part: 
 - https://mypet-server.herokuapp.com (GitHub: https://github.com/Candyexplode/mypet-server.git) (This webpage can not be open, because the real page run on mypet-web app)
-- https://mypet-web.herokuapp.com (GitHub: https://github.com/Candyexplode/mypet-server.git) (open this url to run the user part code)
+- http://mypet-web.herokuapp.com (GitHub: https://github.com/Candyexplode/mypet-web.git) (open this url to run the user part code)
 
 We try to merge into a one app, but since we use different restful api, we do not know how to merge. Also, one Heroku app only can run one node.js app, so we seperete to three app. I test my two Heroku apps to successful connect to each other. But still don't know how to connect to the rest one.
 
