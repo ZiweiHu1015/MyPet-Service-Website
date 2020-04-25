@@ -5,7 +5,7 @@
 
 * 
 
-Heroku link: https://git.heroku.com/cs326vav.git
+Heroku link: https://cs326vav.herokuapp.com
 
 * Part 0: Project API Planning
 
