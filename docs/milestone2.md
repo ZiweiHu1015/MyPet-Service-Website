@@ -1,7 +1,7 @@
 # MyPet
 # Work Breakdown:
 * Peilin Guo:Peilin Guo: Making Back-end Skeleton Code and Front-end Implementation. Writing milestone2.md file. Helping implement database code.
-* Ziwei Hu: Making databse Front-end implementation. Heloping writing milestone 2 and implement back end skeleton.Making a pet service page.
+* Ziwei Hu: Making databse implementation. Helping writing milestone 2 and implement back end skeleton.Making a pet service page.
 * Yi Sha: Making all website about the users and pets, including login/logout, signup, profile, and pet list. Also making an website for clients to contact other users called Users List. Implementating all back-end code and front-end for these websites.
 
 
