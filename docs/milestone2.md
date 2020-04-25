@@ -10,7 +10,7 @@
 
 API flowcharts:
 ![](imgMilestone1/flowcharts.jpg)
-
+![](imgMilestone1/apiflow.png)
 
 ## Part 2: Front-end Implementation
 
@@ -157,4 +157,18 @@ I use "yarn" to change ts code to js. To run these codes, first you need to "npm
 And for html part, you need to run "serve" at "html" folder.
 ![](imgMilestone1/setup2.png)
 
-Heroku link: https://immense-escarpment-89905.herokuapp.com
+
+
+#### Heroku link: https://immense-escarpment-89905.herokuapp.com
+
+#### Heroku link for user part: 
+- https://dashboard.heroku.com/apps/mypet-server.com (GitHub: https://github.com/Candyexplode/mypet-server.git)
+- https://dashboard.heroku.com/apps/mypet-web.com (GitHub: https://github.com/Candyexplode/mypet-server.git)
+We try to merge into a one app, but since we use different restful api, we do not know how to merge. Also, one Heroku app only can run one node.js app, so we seperete to three app. I test my two Heroku apps to successful connect to each other. But still don't know how to connect to the rest one.
+
+#### Success of connecting two Heroku apps
+![](imgMilestone1/database3.png)
+![](imgMilestone1/database1.png)
+![](imgMilestone1/database2.png)
+![](imgMilestone1/heroku1.png)
+![](imgMilestone1/heroku2.png)
