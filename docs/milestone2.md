@@ -86,6 +86,31 @@ Example
 Responses:
 The read endpoint outputs “You already have a post with message: + value.” if there is a post that exists. The endpoint outputs “You haven't posted any services yet, please create a new one.” if there is no post existing.
 
+* delete
+The delete  provides a way for the clients to delete post information by providing first name, last name and city name.
+
+
+There are three required parameters and zero optional parameters for this endpoint.
+
+Parameter
+Description
+Fname
+(Required) The first name for the newly created user counter
+
+Lname
+(Required) The last name for the newly created user
+
+City
+(Required) The city name for the newly created counter city name
+
+
+Example
+![](imgMilestone1/delete.png)
+![](imgMilestone1/delete1.png)
+Responses:
+Your service post at you location has been deleted
+
+
 ### User Login
 
 Before clients go to the Home page (index.html), they will need to log in. In this example, we use an account which is already signed up before (test1).
