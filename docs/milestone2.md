@@ -1,18 +1,19 @@
 # MyPet
 # Work Breakdown:
 * Peilin Guo:Peilin Guo: Making Back-end Skeleton Code and Front-end Implementation. Writing milestone2.md file. Helping implement database code.
-* Ziwei Hu: Making Navigation bar, background picture, and text, posting area, and posting form. Making a pet service page.Database,create and connect database to mangodb, change ts file to js file, deploy app to heroku, modify m2.md
+* Ziwei Hu: Making Navigation bar, background picture, and text, posting area, and posting form. Making a pet service page.
+* Yi Sha: Making all website about the users and pets, including login/logout, signup, profile, and pet list. Also making an website for clients to contact other users called Users List. Implementating all back-end code and front-end for these websites.
 
-* 
 
 Heroku link: https://cs326vav.herokuapp.com
 
-* Part 0: Project API Planning
+## Part 0: Project API Planning
 
 API flowcharts:
 ![](imgMilestone1/flowcharts.jpg)
 
-* Part 2: Front-end Implementation
+
+## Part 2: Front-end Implementation
 
 * Create 
 Parameter
@@ -86,29 +87,48 @@ Example
 Responses:
 The read endpoint outputs “You already have a post with message: + value.” if there is a post that exists. The endpoint outputs “You haven't posted any services yet, please create a new one.” if there is no post existing.
 
+### User Login
 
-* Delete
-The delete function provide client a way to delete their post by providing first name, last name and city name.
+Before clients go to the Home page (index.html), they will need to log in. In this example, we use an account which is already signed up before (test1).
 
-There are three required parameters and zero optional parameters for this endpoint.
+#### Example
+![](imgMilestone1/loginex.png)
 
-Parameter
-Description
-Fname
-(Required) The first name for the newly created user counter
+### User Signup
 
-Lname
-(Required) The last name for the newly created user
+If clients do not have an account, they can click "sign up". Then it will jump to sign up page (signup.html).
 
-City
-(Required) The city name for the newly created counter city name
+#### Example
+![](imgMilestone1/signupex.png)
 
-Example
-![](imgMilestone1/delete.png)
-Responses:
-The delete outpots "Your service post at +cityname+ has been deleted."
+### User profile
 
+When users log in, they can move to "User" and click "My Profile" to see user information.
 
+#### Example
+![](imgMilestone1/profileex.png)
 
+### Pet List
 
+On the right hand side, users can see/add/edit/delete their pets.
 
+#### Example
+![](imgMilestone1/petex.png)
+
+### Users List
+
+If users find useful posts and want to contact to the users whom post these posts, users can find these users' information on Users List page.
+
+#### Example
+![](imgMilestone1/userslistex.png)
+
+### Log Out
+
+When users click "log out", they will return to the Home page (index.html).
+
+### Set Up for Users Part
+
+I use "yarn" to change ts code to js. To run these codes, first you need to "npm i -g yarn" and run "yarn". Then run "yarn start" at "server" folder.
+![](imgMilestone1/setup1.png)
+And for html part, you need to run "serve" at "html" folder.
+![](imgMilestone1/setup2.png)
