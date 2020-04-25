@@ -87,7 +87,7 @@ Responses:
 The read endpoint outputs “You already have a post with message: + value.” if there is a post that exists. The endpoint outputs “You haven't posted any services yet, please create a new one.” if there is no post existing.
 
 
-*Delete
+* Delete
 The delete function provide client a way to delete their post by providing first name, last name and city name.
 
 There are three required parameters and zero optional parameters for this endpoint.
