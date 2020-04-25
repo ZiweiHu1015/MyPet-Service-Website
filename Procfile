@@ -1,2 +1,2 @@
 
-web: node PetServerMain.js
+web: node index.js
