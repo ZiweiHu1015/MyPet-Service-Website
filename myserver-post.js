@@ -44,7 +44,7 @@ var MyServer = /** @class */ (function () {
         var _this = this;
         this.server = express();
        // process.env.PORT || 8080;
-        this.port = process.env.PORT || 8080;
+        this.port =  8080;
         this.router = express.Router();
         this.theDatabase = db;
         this.router.use(function (request, response, next) {
@@ -155,7 +155,7 @@ var MyServer = /** @class */ (function () {
         });
     };
     MyServer.prototype.listen = function (port) {
-        this.server.listen(port);
+        this.server.listen(process.env.port);
     };
     MyServer.prototype.updatePet = function (Fname, Lname, City, value, response) {
         return __awaiter(this, void 0, void 0, function () {
