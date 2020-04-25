@@ -1,9 +1,11 @@
 # MyPet
 # Work Breakdown:
 * Peilin Guo:Peilin Guo: Making Back-end Skeleton Code and Front-end Implementation. Writing milestone2.md file. Helping implement database code.
-* Ziwei Hu: Making Navigation bar, background picture, and text, posting area, and posting form. Making a pet service page.
+* Ziwei Hu: Making Navigation bar, background picture, and text, posting area, and posting form. Making a pet service page.Database,create and connect database to mangodb, change ts file to js file, deploy app to heroku.
+
 * 
 
+Heroku link: https://git.heroku.com/cs326vav.git
 
 * Part 0: Project API Planning
 
