@@ -106,7 +106,8 @@ City
 Example
 ![](imgMilestone1/delete.png)
 Responses:
-The delete outpots "You have delete 
+The delete outpots "Your service post at +cityname+ has been deleted."
+
 
 
 
