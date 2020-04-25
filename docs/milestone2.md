@@ -5,7 +5,6 @@
 * Yi Sha: Making all website about the users and pets, including login/logout, signup, profile, and pet list. Also making an website for clients to contact other users called Users List. Implementating all back-end code and front-end for these websites.
 
 
-Heroku link: https://cs326vav.herokuapp.com
 
 ## Part 0: Project API Planning
 
@@ -132,3 +131,5 @@ I use "yarn" to change ts code to js. To run these codes, first you need to "npm
 ![](imgMilestone1/setup1.png)
 And for html part, you need to run "serve" at "html" folder.
 ![](imgMilestone1/setup2.png)
+
+Heroku link: https://immense-escarpment-89905.herokuapp.com
