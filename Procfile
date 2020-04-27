@@ -1,3 +1,1 @@
-
-
-web: node ./petServerMain.js
+web:node PetServerMain.js

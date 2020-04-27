@@ -39,22 +39,21 @@ exports.__esModule = true;
 var http = require('http');
 var url = require('url');
 var express = require('express');
-var MyServer = /** @class */ (function () { 
+var MyServer = /** @class */ (function () {
     function MyServer(db) {
         var _this = this;
         this.server = express();
-       // process.env.PORT || 8080;
-        this.port =  8080;
+        this.port = process.env.PORT;
         this.router = express.Router();
         this.theDatabase = db;
         this.router.use(function (request, response, next) {
             response.header('Content-Type', 'application/json');
             response.header('Access-Control-Allow-Origin', '*');
-            response.header('Access-C ontrol-Allow-Headers', '*');
+            response.header('Access-Control-Allow-Headers', '*');
             next();
         });
         // Serve static pages from a particular path.
-        this.server.use('/', express.static('./html'));
+        this.server.use('/', express.static('./static'));
         this.server.use('/', express.json());
         // Set a single handler for a route.
         this.router.post('/users/:userId/create', this.createHandler.bind(this));
@@ -155,7 +154,7 @@ var MyServer = /** @class */ (function () {
         });
     };
     MyServer.prototype.listen = function (port) {
-        this.server.listen(process.env.port);
+        this.server.listen(port);
     };
     MyServer.prototype.updatePet = function (Fname, Lname, City, value, response) {
         return __awaiter(this, void 0, void 0, function () {
