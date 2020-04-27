@@ -31,7 +31,7 @@
       }
       $.post(`${api}/sign-up`, newUser, function success(res){
           window.localStorage.setItem('user', JSON.stringify(res.data));
-          alert(res.msg);
+          // alert(res.msg);
           window.location = '/index.html'
       }).catch(function error (err) {
         $('#login-alert').html(err.responseJSON.msg);
@@ -40,4 +40,4 @@
     });
 
   });
-})('http://localhost:8000');
+})('http://mypet-server.herokuapp.com');

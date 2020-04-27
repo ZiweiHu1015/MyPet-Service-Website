@@ -1,13 +1,13 @@
 {
   "name": "cs326-final-Vav",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "main": "petServerMain.js",
   "directories": {
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node petServerMain.js"
   },
   "repository": {
     "type": "git",
@@ -36,5 +36,6 @@
   },
   "devDependencies": {
     "@types/node": "^13.13.2"
-  }
+  },
+  "description": ""
 }
