@@ -1,14 +1,11 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="CSS/bootstrap.min.css">
-    <link rel="stylesheet" href="CSS/bootstrap-datetimepicker-standalone.min.css">
-    <link rel="stylesheet" href="CSS/yi.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/index.css">
     <style>
         /*web background*/
         .container{
@@ -20,7 +17,10 @@
             vertical-align: middle;
         }
         .login-center {
-            height: 100vh;           
+            height: 100vh;
+        }
+        .mypet-head {
+            color: #727272;
         }
     </style>
     <title>Login</title>
@@ -31,7 +31,7 @@
             <div class="well col-md-6 m-auto">
                 <h2 class="text-center mypet-style1">Welcome to MyPet</h2>
                 <p></p>
-                <form action="/login" method="post" role="form">
+                <form role="form">
                     <div class="input-group input-group-md">
                         <input type="text" class="form-control" id="username" name="username" placeholder="User Name"/>
                     </div>
@@ -40,20 +40,16 @@
                         <input type="password" class="form-control" id="password" name="password" placeholder="Password"/>
                     </div>
                     <br/>
-                    <button type="submit" class="btn btn-success btn-block mypet-style2">Log In</button>
-                    <p class = "mypet-style3 text-center">Do not have an accont? Please <a href="signup.html">Sign up</a>.</p>
+                    <button type="button" class="btn btn-success btn-block mypet-style2" id="signInButton">Log In</button>
+                    <p class="text-center mt-3">If you have not a account, please <a href="signup.html">Sign Up.</a></p>
+                    <div id="login-alert" class="alert alert-danger font p-2 d-none text-center" role="alert"></div>
                 </form>
             </div>
         </div>
     </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery.slim.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/moment-with-locales.min.js"></script>
-    <script src="js/bootstrap-datetimepicker.js"></script>
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/login.js"></script>
   </body>
 </html>
