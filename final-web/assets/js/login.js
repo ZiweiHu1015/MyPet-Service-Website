@@ -12,7 +12,7 @@
         window.localStorage.setItem('user', JSON.stringify(res.data));
         window.location = '/index.html'
       }).catch(function error(err) {
-        $('#login-alert').html(err.responseJSON.msg);
+        $('#login-alert').html(err.hasOwnProperty('responseJSON') ? err.responseJSON.msg : 'Sign up failed');
         $('#login-alert').removeClass('d-none');
       })
     });
@@ -36,7 +36,7 @@
           // alert(res.msg);
           window.location = '/index.html'
       }).catch(function error (err) {
-        $('#login-alert').html(err.responseJSON.msg);
+        $('#login-alert').html(err.hasOwnProperty('responseJSON') ? err.responseJSON.msg : 'Sign up failed');
         $('#login-alert').removeClass('d-none');
       })
     });
