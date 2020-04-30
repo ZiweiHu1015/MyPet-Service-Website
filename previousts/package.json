@@ -1,0 +1,41 @@
+{
+  "name": "cs326-final-Vav",
+  "version": "1.0.0",
+  "main": "petServerMain.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node petServerMain.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZiweiHu1015/cs326-final-Vav.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZiweiHu1015/cs326-final-Vav/issues"
+  },
+  "homepage": "https://github.com/ZiweiHu1015/cs326-final-Vav#readme",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "bootstrap-datetimepicker": "0.0.7",
+    "bootstrap-social": "^5.1.1",
+    "express": "^4.17.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.4.1",
+    "moment": "^2.24.0",
+    "mongodb": "^3.5.7",
+    "pc-bootstrap4-datetimepicker": "^4.17.50",
+    "popper.js": "^1.16.1",
+    "propellerkit-datetimepicker": "^1.2.0",
+    "typescript": "^3.8.3"
+  },
+  "devDependencies": {
+    "@types/node": "^13.13.4"
+  },
+  "description": ""
+}
