@@ -28,8 +28,11 @@ memo: String, // user's memo to show other users.
 
 ## Part 2: Deployment
 
-Heroku:http://mypet-web.herokuapp.com 
+Heroku:
 
-Ps:we use http instead of https. Our heroku should implement on chrome.
+- http://mypet-final-web.herokuapp.com (only click this url, this is the app of front-end)
+- http://mypet-final-server.herokuapp.com (the app for back-end, because we use two ports for the whole app)
+
+Ps:we use http instead of https. 
 
 
