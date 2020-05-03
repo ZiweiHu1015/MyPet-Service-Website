@@ -10,16 +10,16 @@
 
 ## Part 1: Database implementation
 
-User document
-{
-_id:<ObjectID>
-username: String, // name of the user 
-password: any, // password of user
-firstname:String, // user's first name
-lastname: String, // user's lastname
-birthdate: any, // user's birthdate 
-email:String, // user's email 
-memo: String, // user's memo to show other users. 
+* User document
+* {
+* _id:<ObjectID>
+* username: String, // name of the user 
+* password: any, // password of user
+* firstname:String, // user's first name
+* lastname: String, // user's lastname
+* birthdate: any, // user's birthdate 
+* email:String, // user's email 
+* memo: String, // user's memo to show other users. 
 
 }
 
