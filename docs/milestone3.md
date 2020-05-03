@@ -28,10 +28,11 @@ memo: String, // user's memo to show other users.
 
 ## Part 2: Deployment
 
-Heroku:
+### Heroku:
 
 - http://mypet-final-web.herokuapp.com (only click this url, this is the app of front-end)
 - http://mypet-final-server.herokuapp.com (the app for back-end, because we use two ports for the whole app)
+- In order to build two apps on heroku, we made two new repositories on GitHub. (https://github.com/Candyexplode/final-server.git & https://github.com/Candyexplode/final-web.git) We moved our code from the old repository to these two new repositories.
 
 Ps:we use http instead of https. 
 
