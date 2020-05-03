@@ -12,7 +12,7 @@
 
 * User document
 * {
-* _id:<ObjectID>
+* _id: ObjectID
 * username: String, // name of the user 
 * password: any, // password of user
 * firstname:String, // user's first name
@@ -20,8 +20,40 @@
 * birthdate: any, // user's birthdate 
 * email:String, // user's email 
 * memo: String, // user's memo to show other users. 
-
 }
+  
+* Pet document
+* {
+* _id: ObjectID
+* name: String, // dog's name 
+* gender: String, // dog's gender
+* age:int, // dog's age 
+* species: String, // dog's species
+}
+  
+
+* PetService document
+* {
+* _id: ObjectID
+* title: String, // title for user's service  
+* integral: int, // ???
+* content, // content for this pet service
+* lastestAt: data, // ?? pet service data
+* userId: ObjectId, // this is same user id in ObjectID.
+}
+
+* Post document
+* {
+* _id: ObjectID
+* firstname: String, // user's first name for this pet service   
+* lastname: String, // user's last name for this pet service 
+* city: String, // user's city for this pet service 
+* content: String, //  content for this pet service
+* userId: ObjectId, // this is same user id in ObjectID.
+}
+
+
+
 
 ## Part 2: Front-end Implementation
 
