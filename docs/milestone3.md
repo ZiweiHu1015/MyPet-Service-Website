@@ -1,9 +1,9 @@
 # MyPet
 # Work Breakdown:
 
-* Yi Sha: Making all website about the users and pets, including login/logout, signup, profile, and pet list. Also making an website for clients to contact other users called Users List. Implementating all back-end code and front-end for these websites.
-* Peilin Guo:Making Back-end Skeleton Code and Front-end Implementation. Writing milestone2.md file. Making implement database skeleton code.implementing the Frount-end implementation for service part.
-* Ziwei Hu: Petservice page front-end implementation, database back-end implementation, writing milestone2.me file, mileston3.md file. 
+* Yi Sha: Making all website about the users and pets, including login/logout, signup, profile, and pet list. Also making an website for clients to contact other users called Users List. Implementating all back-end code and front-end for these websites.writing milestone3.me file.
+* Peilin Guo:Making Petservice Back-end  Code and Front-end Implementation. Making  and implementating database skeleton code for petservice part. implementing the Frount-end and test  service part. Writing markdown file.
+* Ziwei Hu: Petservice page front-end implementation, database back-end implementation, writing milestone3.me file.
 
 
 
