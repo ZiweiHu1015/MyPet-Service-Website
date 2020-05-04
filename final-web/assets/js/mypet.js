@@ -465,7 +465,7 @@ $(function() {
         email: $('#email').val(),
         memo: $('#memo').val()
       };
-      if (id) {
+      if (id && id == user._id) {
         // Edit
         u._id = id;
         $.ajax({
@@ -479,10 +479,11 @@ $(function() {
         });
       } else {
         // Add
-        $.post(`${api}/users`, u,function(res, status) {
-          console.log(">> ", res.msg);
-          refreshUserData();
-        });
+        console.log("your user id is not equal to this data")
+        // $.post(`${api}/users`, u,function(res, status) {
+          // console.log(">> ", res.msg);
+          // refreshUserData();
+        // });
       }
     }
 
@@ -604,13 +605,18 @@ $(function() {
           var posts = JSON.parse(window.localStorage.getItem('posts'));
           var deleteOne = posts[idx];
 
-          $.ajax({
-            url: `${api}/posts/${deleteOne._id}`,
-            method: 'delete'
-          }).done(function(res, status) {
-            console.log(">> ", res.msg)
-            postRefresh();
-          });
+          if(deleteOne.userId === user._id) {
+            $.ajax({
+              url: `${api}/posts/${deleteOne._id}`,
+              method: 'delete'
+            }).done(function(res, status) {
+              console.log(">> ", res.msg)
+              postRefresh();
+            });
+          }
+          else {
+            this.console.log("Delete post: you can not delete other's post")
+          }
       }
     }
 
@@ -658,5 +664,5 @@ $(function() {
     }
 
   });
-})('http://mypet-server.herokuapp.com');
+})('http://mypet-final-server.herokuapp.com');
 // })('http://localhost:8000');

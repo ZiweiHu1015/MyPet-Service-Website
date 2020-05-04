@@ -1,175 +1,65 @@
 # MyPet
 # Work Breakdown:
-* Peilin Guo:Peilin Guo: Making Back-end Skeleton Code and Front-end Implementation. Writing milestone2.md file. Helping implement database code.
-* Ziwei Hu: Making databse implementation. Helping writing milestone 2 and implement back end skeleton.Making a pet service page.
-* Yi Sha: Making all website about the users and pets, including login/logout, signup, profile, and pet list. Also making an website for clients to contact other users called Users List. Implementating all back-end code and front-end for these websites.
+
+* Yi Sha: Making all website about the users and pets, including login/logout, signup, profile, and pet list. Also making an website for clients to contact other users called Users List. Implementating all back-end code and front-end for these websites.writing milestone3.me file.
+* Peilin Guo:Making Petservice Back-end  Code and Front-end Implementation. Making  and implementating database skeleton code for petservice part. implementing the Frount-end and test  service part. Writing markdown file.
+* Ziwei Hu: Petservice page front-end implementation, database back-end implementation, writing milestone3.me file.
 
 
 
-## Part 0: Project API Planning
+## Part 1: Database implementation
 
-API flowcharts:
-![](imgMilestone1/flowcharts.jpg)
-![](imgMilestone1/apiflow.png)
+### User document
 
-## Part 2: Front-end Implementation
+- We use TypeScript Built-in data type "any" for our variables. If variable is declared with any data-type then any type of value can be assigned to that variable. 
 
-* Create 
-Parameter
-Description
+```json
+{
+    _id: ObjectID
+    username: any, // name of the user 
+    password: any, // password of user
+    firstname: any, // user's first name
+    lastname: any, // user's lastname
+    birthdate: any, // user's birthdate 
+    email: any, // user's email 
+    memo: any, // user's memo to show other users. 
+}
+```
+  
+### Pet document
 
-Fname
-(Required) The first name for the newly created user counter
+```json
+{
+    _id: ObjectID
+    name: any, // dog's name 
+    gender: any, // dog's gender
+    age: any, // dog's age 
+    species: any, // dog's species
+}
+```
 
-Lname
-Required) The last name for the newly created user
+### Post document
 
-
-City
-(Required) The city name for the newly created counter city name
-
-
-example:
-![](imgMilestone1/create.png)
-Responses
-The create API returns all response data as a JSON object. 
-The interface will create a post for user to our database. 
-
-
-* Update:
-The update provides a way for the clients to update their previous posts. They can update the first name, last name, city and value.
-
-There are three requirement parameters and zero optional parameters for this endpoint. 
-
-Parameter
-Description
-Example
-FName
-(Required) The first name for the newly created server content
-LName 
-(Required) The last name for the newly created server content
-City
-(Required) The city name of the service server content
-content 
-(Required) The service post message by the user to replace the default or previous post
-
-
-Example
-![](imgMilestone1/update.png)
-Responses:
-If users do not have server content before, update will help them to add their server content 
-If users have server coentent before,update will help them to change their server content
+```json
+{
+    _id: ObjectID
+    firstname: any, // user's first name for this pet service   
+    lastname: any, // user's last name for this pet service 
+    city: any, // user's city for this pet service 
+    content: any, //  content for this pet service
+    userId: ObjectId, // this is same user id in ObjectID.
+}
+```
 
 
 
+## Part 2: Deployment
 
-* read
-The read  provides a way for the clients to get post information by providing first name, last name and city name.
+### Heroku
 
+- http://mypet-final-web.herokuapp.com (only click this url, this is the app of front-end)
+- http://mypet-final-server.herokuapp.com (the app for back-end, because we use two ports for the whole app)
+- In order to build two apps on heroku, we made two new repositories on GitHub. (https://github.com/Candyexplode/final-server.git & https://github.com/Candyexplode/final-web.git) We moved our code from the old repository to these two new repositories.
 
-There are three required parameters and zero optional parameters for this endpoint.
+Ps: we use http instead of https.
 
-Parameter
-Description
-Fname
-(Required) The first name for the newly created user counter
-
-Lname
-(Required) The last name for the newly created user
-
-City
-(Required) The city name for the newly created counter city name
-
-
-Example
-![](imgMilestone1/read.png)
-Responses:
-The read endpoint outputs “You already have a post with message: + value.” if there is a post that exists. The endpoint outputs “You haven't posted any services yet, please create a new one.” if there is no post existing.
-
-* delete
-The delete  provides a way for the clients to delete post information by providing first name, last name and city name.
-
-
-There are three required parameters and zero optional parameters for this endpoint.
-
-Parameter
-Description
-Fname
-(Required) The first name for the newly created user counter
-
-Lname
-(Required) The last name for the newly created user
-
-City
-(Required) The city name for the newly created counter city name
-
-
-Example
-![](imgMilestone1/delete.png)
-![](imgMilestone1/delete1.png)
-Responses:
-Your service post at you location has been deleted
-
-
-### User Login
-
-Before clients go to the Home page (index.html), they will need to log in. In this example, we use an account which is already signed up before (test1).
-
-#### Example
-![](imgMilestone1/loginex.png)
-
-### User Signup
-
-If clients do not have an account, they can click "sign up". Then it will jump to sign up page (signup.html).
-
-#### Example
-![](imgMilestone1/signupex.png)
-
-### User profile
-
-When users log in, they can move to "User" and click "My Profile" to see user information.
-
-#### Example
-![](imgMilestone1/profileex.png)
-
-### Pet List
-
-On the right hand side, users can see/add/edit/delete their pets.
-
-#### Example
-![](imgMilestone1/petex.png)
-
-### Users List
-
-If users find useful posts and want to contact to the users whom post these posts, users can find these users' information on Users List page.
-
-#### Example
-![](imgMilestone1/userslistex.png)
-
-### Log Out
-
-When users click "log out", they will return to the Home page (index.html).
-
-### Set Up for Users Part
-
-I use "yarn" to change ts code to js. To run these codes, first you need to "npm i -g yarn" and run "yarn". Then run "yarn start" at "server" folder.
-![](imgMilestone1/setup1.png)
-And for html part, you need to run "serve" at "html" folder.
-![](imgMilestone1/setup2.png)
-
-
-
-#### Heroku link: https://immense-escarpment-89905.herokuapp.com
-
-#### Heroku link for user part: 
-- https://mypet-server.herokuapp.com (GitHub: https://github.com/Candyexplode/mypet-server.git) (This webpage can not be open, because the real page run on mypet-web app)
-- http://mypet-web.herokuapp.com (GitHub: https://github.com/Candyexplode/mypet-web.git) (open this url to run the user part code, for final project, still click this url to run the project)
-
-We try to merge into a one app, but since we use different restful api, we do not know how to merge. Also, one Heroku app only can run one node.js app, so we seperete to three app. I test my two Heroku apps to successful connect to each other. But still don't know how to connect to the rest one.
-
-#### Success of connecting two Heroku apps
-![](imgMilestone1/database3.png)
-![](imgMilestone1/database1.png)
-![](imgMilestone1/database2.png)
-![](imgMilestone1/heroku1.png)
-![](imgMilestone1/heroku2.png)

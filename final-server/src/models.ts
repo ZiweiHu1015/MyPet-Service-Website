@@ -5,7 +5,9 @@ export default class Models {
   private db: Db;
 
   constructor() {
-    const dbUrl: string = 'mongodb+srv://ysha:Woaizhongguo%402020@ysha-ieadu.mongodb.net/test?retryWrites=true&w=majority'
+    const secret = require('./secret.json');
+    // const dbUrl: string = 'mongodb+srv://ysha:Woaizhongguo%402020@ysha-ieadu.mongodb.net/test?retryWrites=true&w=majority'
+    const dbUrl: string = 'mongodb+srv://' + secret.username + ':' + secret.password + '@ysha-ieadu.mongodb.net/test?retryWrites=true&w=majority';
     // connect mongo
     MongoClient.connect(dbUrl, { useUnifiedTopology: true }, (err, client) => {
       if (err) {
