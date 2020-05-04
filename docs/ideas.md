@@ -16,8 +16,7 @@ Yi Sha: Candyexplode
 
 Our website relates to an existing website “PetCoach”. https://www.petcoach.co/educational-center/
 
-The main idea of our website is to help people who love pets take care of their pets. For example, the two websites provide advice for caring pets. However, our website will not only target giving advice but also target pet service. Many times pet owners cannot travel or have insufficient time to take care of their pets.  Our user could use pet service to solve this problem. Pet service means a user can provide pet service to other users and get corresponding credit.  Next time, the service provider can use credit to make others help him to take care of his pet. 
-
+The main idea of our website is to help people who love pets take care of their pets. For example,  Many times pet owners cannot travel or have insufficient time to take care of their pets.  Our user could use pet service to solve this problem. Pet service means a user can provide pet service to other users 
 
 Data type: User information and pet service information. 
 
