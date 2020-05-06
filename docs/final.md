@@ -20,6 +20,18 @@ Team member names with their GitHub usernames.
 
 ## User Interface
 
+### User's Profile
+
+![](imgMilestone1/final-profile.png)
+
+At this website, users can view their personal information and manage their pets' information. Although their pets' information can not see by other users, future, we (our website) can collect and analyze these data to help improve our website's service.
+
+### List of Users
+
+![](imgMilestone1/final-userlist.png)
+
+At this website, users can edit their own personal information and view other users' information. Users can also use the information from this webpage to find and contact other users.
+
 ## APIs: A final up-to-date list/table describing your application’s API
 
 ## Database
@@ -84,7 +96,7 @@ Once the user is logged in, each subsequent request will include the JWT, allowi
 
 ### Authorization
 
-The users who have logged in can edit their information at the Users List website and delete their posts at the Post website. Although users can see others' information and posts, they can not successfully change other users' information and delete other users' posts. Others' data will not change, although users click the Edit or Delete button. For debugging, we also add messages to show on the console if a user tries to change or delete other's information or post.
+The users who have logged in can edit their information at the Users List website, create their pets' information, and add/delete their posts at the Post website. Although users can see others' information and posts, they can not successfully change other users' information and delete other users' posts. Others' data will not change, although users click the Edit or Delete button. For debugging, we also add messages to show on the console if a user tries to change or delete other's information or post.
 
 ## Division of Labor
 
