@@ -80,6 +80,8 @@ At this website, users can edit their own personal information and view other us
 
 ## URL Routes/Mappings
 
+If people want to use our website and they are the first time to enter our website, it will automatically jump to the log-in page and ask users to log in. After logging in, users could access every webpage.
+
 A final up-to-date table of all the URL routes that your application supports and a short description of what those routes are used for. You should also indicate any authentication and permissions on those routes.
 
 ## Authentication/Authorization
