@@ -72,7 +72,19 @@ A final up-to-date table of all the URL routes that your application supports an
 
 ## Authentication/Authorization
 
-A final up-to-date description of how users are authenticated and any permissions for specific * users (if any) that you used in your application. You should mention how they relate to which UI views are accessible.
+### Authentication
+
+We use JWT for user authentication.
+
+A JWT is a mechanism to verify the owner of some JSON data. It's an encoded string, which is URL safe, that can contain an unlimited amount of data, and it's cryptographically signed. When a server receives a JWT, it can guarantee the data it contains can be trusted because it's signed by the source. No middleman can modify a JWT once it's sent.
+
+Once the user is logged in, each subsequent request will include the JWT, allowing the user to access routes, services, and resources that are permitted with that token. Single Sign-On is a feature that widely uses JWT nowadays, because of its small overhead and its ability to be easily used across different domains.
+
+![](imgMilestone1/authen.png)
+
+### Authorization
+
+The users who have logged in can edit their information at the Users List website and delete their posts at the Post website. Although users can see others' information and posts, they can not successfully change other users' information and delete other users' posts. Others' data will not change, although users click the Edit or Delete button. For debugging, we also add messages to show on the console if a user tries to change or delete other's information or post.
 
 ## Division of Labor
 
