@@ -30,13 +30,21 @@ Team member names with their GitHub usernames.
 
 ![](imgMilestone1/final-profile.png)
 
-At this website, users can view their personal information and manage their pets' information. Although their pets' information can not see by other users, future, we (our website) can collect and analyze these data to help improve our website's service.
+On this webpage, users can view their personal information and manage their pets' information. Although their pets' information can not see by other users, the future, we (our website) can collect and analyze these data to help improve our website's service.
 
 ### List of Users
 
 ![](imgMilestone1/final-userlist.png)
 
-At this website, users can edit their own personal information and view other users' information. Users can also use the information from this webpage to find and contact other users.
+On this webpage, users can edit their personal information and view other users' information. Users can also use the information from this webpage to find and contact other users.
+
+### Posts
+
+![](imgMilestone1/final-posts1.png)
+
+![](imgMilestone1/final-posts2.png)
+
+On this webpage, users can post their pet services and view all posts. Also, users can search other's services by specific city names to find nearby services. Users can only delete their own posts.
 
 ## APIs: A final up-to-date list/table describing your application’s API
 
