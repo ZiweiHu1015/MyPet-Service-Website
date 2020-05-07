@@ -163,7 +163,7 @@ The users who have logged in can edit their information at the Users List websit
 
 ### Yi Sha
 
-Making all website about the users and pets, including login/logout, signup, profile, and pet list. Also making an website for clients to contact other users called Users List. Implementating all back-end code and front-end for these websites. Writing milestone file.
+Making all website about the users and pets, including login/logout, signup, profile, and pet list. Also making an website for clients to contact other users called Users List. Implementating all back-end code and front-end for these websites. Writing markdown file.
 
 ### Peilin Guo
 
@@ -171,7 +171,7 @@ Making Petservice Back-end  Code and Front-end Implementation. Making  and imple
 
 ### Ziwei Hu
 
-Petservice page front-end implementation, database back-end implementation, writing milestone3.me file.
+Petservice page front-end implementation, database back-end implementation, writing markdown file.
 
 ## Conclusion
 
