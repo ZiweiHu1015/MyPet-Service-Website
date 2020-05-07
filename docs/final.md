@@ -152,13 +152,13 @@ Only /sign-in and /sign-up pages do not need user authentication.
 | / | Home page |
 | /sign-in | User needs to log into our website first  |
 | /sign-up | If users do not have an account, they need to sign up |
-| /users |  |
-| /posts |  |
-| /pets |  |
-| /users/:id |  |
+| /users |  |users can see the list of basic informations of all users, 
+| /posts |  | users can post and see others' posts here
+| /pets |  |  users can add pets 
+| /users/:id |  |allows users to edit user information base on user's id. 
 | /posts/:id | Delete user's own specific post |
-| /posts/filter/:filter |  |
-| /pets/:id |  |
+| /posts/filter/:filter |  | allow users find a post base on key words
+| /pets/:id |  | allows users to edit pet's information base on pet's id
 
 ## Authentication/Authorization
 
@@ -188,7 +188,7 @@ Making Petservice Back-end  Code and Front-end Implementation. Making  and imple
 
 ### Ziwei Hu
 
-Petservice page front-end implementation, database back-end implementation, writing markdown file.
+Whole website skeleton including the top navigation bar, the drop-down meanu, the warp-screen effect, and the posting page. front-end implementation, database back-end implementation, writing final-markdown file,record video. 
 
 ## Conclusion
 
