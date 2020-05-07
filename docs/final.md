@@ -185,7 +185,7 @@ Making all website about the users and pets, including login/logout, signup, pro
 
 ### Peilin Guo
 
-Making Petservice Back-end  Code and Front-end Implementation. Making  and implementating database skeleton code for petservice part. implementing the Frount-end and test  service part. Writing markdown file.
+Making Petservice Back-end  Code and Front-end Implementation. Making  and implementating database skeleton code for petservice part. implementing the Frount-end and test  service part. Writing markdown file. Making video.
 
 ### Ziwei Hu
 
