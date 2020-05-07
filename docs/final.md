@@ -192,4 +192,8 @@ Whole website skeleton including the top navigation bar, the drop-down meanu, th
 
 ## Conclusion
 
-A conclusion describing your team’s experience in working on this project. This should include what you learned * through the design and implementation process, the difficulties you encountered, what your team would have liked to know * * * before starting the project that would have helped you later, and any other technical hurdles that your team encountered.
+We faced a lot of problems during working on the project. The biggest challenge is that we can't discuss problems face to face, one of our team members is in a different time zone which has 12 hours of time difference. The most important thing we learned is how to teamwork.
+
+Despite all challenges, we have the project done and achieved most of the functionalities. We all learned how to build a website and connect to the server and build a database. When we design the website, we have a lot of ideas, and we wanted to implement all of them. But if we are too obsessed with making all ideas work, the website will be crowded and lost its focus. We realized that we need to have several main functionalities for the website, and delate confusing ones. 
+
+We would like to know how social media like Facebook handle the traffic since there are so many users. Before the start of the project, if I could have an example of a website, it would really help us. We didn't know how to connect everything together, it took us a long time to figure out. 
