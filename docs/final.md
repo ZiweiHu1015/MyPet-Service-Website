@@ -52,46 +52,46 @@ A final up-to-date list/table describing your application’s API
 
 ### /sign-in
 
-Method | Describe
-- | -
-POST | Submit username and password to the server, then API calls data from database to match
+| Method | Describe |
+| :----- | :-------:|
+| POST | Submit username and password to the server, then API calls data from database to match |
 
 ### /sign-up
 
-Method | Describe
-- | -
-POST | Create the data of user's information and then submit to the server, API stores it to the database
+| Method | Describe |
+| :----- | :-------:|
+| POST | Create the data of user's information and then submit to the server, API stores it to the database |
 
 ### /users
 
-Method | Describe
-- | -
-GET | Get all users' data
-POST | Update users' data
-PATCH | Partial update users' data (edit function)
-DELETE | Delete specific user's data (/users/:id)
-GET | Get specific user's data (/users/:id)
+| Method | Describe |
+| :----- | :-------:|
+| GET | Get all users' data |
+| POST | Update users' data |
+| PATCH | Partial update users' data (edit function) |
+| DELETE | Delete specific user's data (/users/:id) |
+| GET | Get specific user's data (/users/:id) |
 
 ### /posts
 
-Method | Describe
-- | -
-GET | Get all posts' data
-GET | Get specific post's data (/posts/:id)
-GET | Get specific post's data by keywords (search function) (/posts/filter/:filter)
-POST | Update posts' data
-PATCH | Partial update post's data (edit function)
-DELETE | Delete specific post's data (/posts/:id)
+| Method | Describe |
+| :----- | :-------:|
+| GET | Get all posts' data |
+| GET | Get specific post's data (/posts/:id) |
+| GET | Get specific post's data by keywords (search function) (/posts/filter/:filter) |
+| POST | Update posts' data |
+| PATCH | Partial update post's data (edit function) |
+| DELETE | Delete specific post's data (/posts/:id) |
 
 ### /pets
 
-Method | Describe
-- | -
-GET | Get all pets' data
-GET | Get specific pet's data (/pets/:id)
-POST | Update pets' data
-PATCH | Partial update pet' data (edit function)
-DELETE | Delete specific pet's data (/pets/:id)
+| Method | Describe |
+| :----- | :-------:|
+| GET | Get all pets' data |
+| GET | Get specific pet's data (/pets/:id) |
+| POST | Update pets' data |
+| PATCH | Partial update pet' data (edit function) |
+| DELETE | Delete specific pet's data (/pets/:id) |
 
 ## Database
 
