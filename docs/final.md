@@ -152,8 +152,8 @@ Only /sign-in and /sign-up pages do not need user authentication.
 | / | Home page |
 | /sign-in | User needs to log into our website first  |
 | /sign-up | If users do not have an account, they need to sign up |
-| /users |  |users can see the list of basic informations of all users, 
-| /posts |  | users can post and see others' posts here
+| /users | |users can see the list of basic informations of all users, 
+| /posts | | users can post and see others' posts here
 | /pets |  |  users can add pets 
 | /users/:id |  |allows users to edit user information base on user's id. 
 | /posts/:id | Delete user's own specific post |
