@@ -156,8 +156,7 @@ Only /sign-in and /sign-up pages do not need user authentication.
 | /posts |  |
 | /pets |  |
 | /users/:id |  |
-| /posts/:id |  |
-| /posts/filter/:filter |  |
+| /posts/:id | Delete user's own specific post |
 | /posts/filter/:filter |  |
 | /pets/:id |  |
 
