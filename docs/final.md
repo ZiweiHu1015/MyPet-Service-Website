@@ -48,21 +48,19 @@ On this webpage, users can post their pet services and view all posts. Also, use
 
 ## APIs
 
-A final up-to-date list/table describing your application’s API
-
-### /sign-in
+### restful API for sign-in
 
 | Method | Describe |
 | :----- | :-------:|
 | POST | Submit username and password to the server, then API calls data from database to match |
 
-### /sign-up
+### restful API for sign-up
 
 | Method | Describe |
 | :----- | :-------:|
 | POST | Create the data of user's information and then submit to the server, API stores it to the database |
 
-### /users
+### restful API for users
 
 | Method | Describe |
 | :----- | :-------:|
@@ -72,7 +70,7 @@ A final up-to-date list/table describing your application’s API
 | DELETE | Delete specific user's data (/users/:id) |
 | GET | Get specific user's data (/users/:id) |
 
-### /posts
+### restful API for posts
 
 | Method | Describe |
 | :----- | :-------:|
@@ -83,7 +81,7 @@ A final up-to-date list/table describing your application’s API
 | PATCH | Partial update post's data (edit function) |
 | DELETE | Delete specific post's data (/posts/:id) |
 
-### /pets
+### restful API for pets
 
 | Method | Describe |
 | :----- | :-------:|
@@ -139,9 +137,29 @@ A final up-to-date list/table describing your application’s API
 
 ## URL Routes/Mappings
 
+### Permissions
+
 If people want to use our website and they are the first time to enter our website, it will automatically jump to the log-in page and ask users to log in. After logging in, users could access every webpage.
 
-A final up-to-date table of all the URL routes that your application supports and a short description of what those routes are used for. You should also indicate any authentication and permissions on those routes.
+### Authentication
+
+Only /sign-in and /sign-up pages do not need user authentication.
+
+### Routes
+
+| Route | Describe |
+| :----- | :-------:|
+| / | Home page |
+| /sign-in | User needs to log into our website first  |
+| /sign-up | If users do not have an account, they need to sign up |
+| /users |  |
+| /posts |  |
+| /pets |  |
+| /users/:id |  |
+| /posts/:id |  |
+| /posts/filter/:filter |  |
+| /posts/filter/:filter |  |
+| /pets/:id |  |
 
 ## Authentication/Authorization
 
