@@ -20,13 +20,10 @@ Team member names with their GitHub usernames.
 
 ## Deployment
 
-- http://mypet-final-web.herokuapp.com
-(only click this url, this is the app of front-end)
+- http://mypet-final-web.herokuapp.com (only click this url, this is the app of front-end)
 - We use http instead of https
-
-
-http://mypet-final-server.herokuapp.com (the app for back-end, because we use two ports for the whole app)
-In order to build two apps on heroku, we made two new repositories on GitHub. (https://github.com/Candyexplode/final-server.git & https://github.com/Candyexplode/final-web.git) We moved our code from the old repository to these two new repositories.
+- http://mypet-final-server.herokuapp.com (the app for back-end, because we use two ports for the whole app)
+- In order to build two apps on heroku, we made two new repositories on GitHub. (https://github.com/Candyexplode/final-server.git & https://github.com/Candyexplode/final-web.git) We moved our code from the old repository to these two new repositories.
 
 ## User Interface
 
@@ -156,13 +153,13 @@ Only /sign-in and /sign-up pages do not need user authentication.
 | / | Home page |
 | /sign-in | User needs to log into our website first  |
 | /sign-up | If users do not have an account, they need to sign up |
-| /users | users can see the list of basic informations of all users| 
-| /posts | users can post and see others' posts here | 
-| /pets |  users can add pets | 
-| /users/:id | allows users to edit user information base on user's id. | 
-| /posts/:id | Delete user's own specific post | 
-| /posts/filter/:filter |  allow users find a post base on key words| 
-| /pets/:id |  allows users to edit pet's information base on pet's id| 
+| /users | Users can see the list of basic informations of all users|
+| /posts | Users can post and see others' posts here |
+| /pets |  Users can view their pets' information |
+| /users/:id | Allow users to edit user information base on user's id |
+| /posts/:id | Delete user's own specific post |
+| /posts/filter/:filter |  allow users find a post base on key words |
+| /pets/:id |  Allow users to edit and delete pet's information base on pet's id |
 
 ## Authentication/Authorization
 
@@ -198,7 +195,6 @@ Whole website skeleton including the top navigation bar, the drop-down meanu, th
 
 The easiest part is to think of an idea at the beginning of the group project.Our group members have the same idea about this project.We faced a lot of problems during working on the project. The biggest challenge is that we can't discuss problems face to face, one of our team members is in a different time zone which has 12 hours of time difference. The most important thing we learned is how to teamwork.
 
-Despite all challenges, we have the project done and achieved most of the functionalities. We all learned how to build a website and connect to the server and build a database. When we design the website, we have a lot of ideas, and we wanted to implement all of them. But if we are too obsessed with making all ideas work, the website will be crowded and lost its focus. We realized that we need to have several main functionalities for the website, and delate confusing ones. 
+Despite all challenges, we have the project done and achieved most of the functionalities. We all learned how to build a website and connect to the server and build a database. When we design the website, we have a lot of ideas, and we wanted to implement all of them. But if we are too obsessed with making all ideas work, the website will be crowded and lost its focus. We realized that we need to have several main functionalities for the website, and delate confusing ones.
 
-We would like to know how social media like Facebook handle the traffic since there are so many users. Before the start of the project, if I could have an example of a website, it would really help us. it took us a long time to figure out how to connect different part together. If we are to continue to work on this project,we hope we can make different communication methods.So that users have more ways to contact each other, such as online direct message chat on our website. 
- 
+We would like to know how social media like Facebook handle the traffic since there are so many users. Before the start of the project, if I could have an example of a website, it would really help us. it took us a long time to figure out how to connect different part together. If we are to continue to work on this project,we hope we can make different communication methods.So that users have more ways to contact each other, such as online direct message chat on our website.
